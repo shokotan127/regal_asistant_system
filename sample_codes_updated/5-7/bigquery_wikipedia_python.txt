@@ -1,0 +1,3 @@
+SELECT DISTINCT title
+FROM `bigquery-public-data.samples.wikipedia`
+WHERE REGEXP_CONTAINS(title, '(?i:python)')

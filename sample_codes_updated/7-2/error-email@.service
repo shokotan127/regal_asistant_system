@@ -1,0 +1,8 @@
+[Unit]
+Description=Failure notfication for %i
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'systemctl status --full "%i" | mail -s "[%i] Failure notification" <自分のメールアドレス>'
+User=nobody
+Group=systemd-journal

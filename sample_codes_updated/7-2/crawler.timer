@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for python crawler
+
+[Timer]
+OnCalendar=6:13
+Unit=crawler.service
+
+[Install]
+WantedBy=multi-user.target

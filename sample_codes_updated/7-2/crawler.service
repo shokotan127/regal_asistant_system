@@ -1,0 +1,7 @@
+[Unit]
+Description=Python crawler
+
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/crawler/run_crawler.sh
+User=ubuntu

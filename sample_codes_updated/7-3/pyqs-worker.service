@@ -1,0 +1,12 @@
+[Unit]
+Description=PyQS worker
+
+[Service]
+Type=simple
+# ワーカーを起動するシェルスクリプトを実行する。
+ExecStart=/home/ubuntu/crawler/run_worker.sh
+# ubuntuユーザーで実行する。
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+SELECT CAST(CEIL(LENGTH(text) / 10.0) * 10 AS INT64) AS length, COUNT(*) AS count
+FROM twitter.tweets
+WHERE lang = "ja"
+GROUP BY length
+ORDER BY length DESC

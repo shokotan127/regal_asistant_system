@@ -1,0 +1,5 @@
+SELECT lang, COUNT(*) AS count
+FROM twitter.tweets
+GROUP BY lang
+ORDER BY count DESC
+LIMIT 20
